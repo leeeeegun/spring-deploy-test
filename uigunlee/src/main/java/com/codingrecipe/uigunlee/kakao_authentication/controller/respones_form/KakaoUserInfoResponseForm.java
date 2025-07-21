@@ -10,12 +10,14 @@ public class KakaoUserInfoResponseForm {
     final private String email;
     final private String nickname;
     final private String accessToken;
+    final private String isNewToken;
 
     public static KakaoUserInfoResponseForm from(KakaoUserInfoResponse kakaoUserInfoResponse) {
         return new KakaoUserInfoResponseForm(
                 kakaoUserInfoResponse.getEmail(),
                 kakaoUserInfoResponse.getNickname(),
                 kakaoUserInfoResponse.getAccessToken()
+
         );
     }
 }

@@ -1,4 +1,10 @@
 package com.codingrecipe.uigunlee.redis_cache;
 
-public class RedisCacheService {
+import java.time.Duration;
+
+public interface RedisCacheService {
+    <K, V> void setKeyAndValue(K key, V value);
+    <K, V> void setKeyAndValue(K key, V value, Duration timeToLive);
+    <T> T getValueByKey(String key, Class<T> clazz);
+    void deleteByKey(String userToken);
 }

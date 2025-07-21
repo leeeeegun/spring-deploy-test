@@ -1,4 +1,9 @@
 package com.codingrecipe.uigunlee.account.service;
 
-public class AccountService {
+
+import com.codingrecipe.uigunlee.account.service.reponse.RegisterAccountResponse;
+import com.codingrecipe.uigunlee.account.service.request.RegisterAccountRequest;
+
+public interface AccountService {
+    RegisterAccountResponse register(RegisterAccountRequest request);
 }
