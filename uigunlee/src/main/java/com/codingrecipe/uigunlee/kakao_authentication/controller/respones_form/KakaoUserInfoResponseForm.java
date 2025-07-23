@@ -17,7 +17,6 @@ public class KakaoUserInfoResponseForm {
                 kakaoUserInfoResponse.getEmail(),
                 kakaoUserInfoResponse.getNickname(),
                 kakaoUserInfoResponse.getAccessToken()
-
         );
     }
 }
