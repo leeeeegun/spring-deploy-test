@@ -33,5 +33,6 @@ public class Book {
         this.content = content;
         this.author = author;
         this.isbn = isbn;
+        this.account = account;
     }
 }

@@ -10,13 +10,15 @@ public class RegisterBookResponseForm {
     private final Long bookId;
     private final String title;
     private final String content;
+    private final String isbn;
     private final String registerAccountNickname;
 
-    public static RegisterBookResponse form(RegisterBookResponse response) {
-        return new RegisterBookResponse(
+    public static RegisterBookResponseForm from(RegisterBookResponse response) {
+        return new RegisterBookResponseForm(
                 response.getBookId(),
                 response.getTitle(),
                 response.getContent(),
+                response.getIsbn(),
                 response.getRegisterAccountNickname()
         );
     }

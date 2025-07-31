@@ -13,6 +13,13 @@ public class RegisterBookRequest {
     private String author;
     private String isbn;
 
+    public RegisterBookRequest(String title, String content, String author, String isbn) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
+        this.isbn = isbn;
+    }
+
     public Book toBook(Account account) {
         return new Book(title, content, author, isbn, account);
     }

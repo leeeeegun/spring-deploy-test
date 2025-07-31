@@ -6,13 +6,10 @@ import com.codingrecipe.uigunlee.account.service.AccountService;
 import com.codingrecipe.uigunlee.account.service.reponse.RegisterAccountResponse;
 import com.codingrecipe.uigunlee.account.service.request.RegisterAccountRequest;
 import com.codingrecipe.uigunlee.redis_cache.RedisCacheService;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.UUID;
 
 @Slf4j
