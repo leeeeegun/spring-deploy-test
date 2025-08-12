@@ -25,6 +25,10 @@ jobs:
 
       - name: Create application.yaml for CD Deploy
         run: |
+          ls
+          cd uigunlee
+          pwd
+          ls
           echo "${{ secrets.PRODUCTION_ENV }}" > .env
 
       - name: Grant execute permission for gradlew
